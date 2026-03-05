@@ -25,18 +25,18 @@ Comprehensive interpretation and roadmap:
 From repo root (`/Users/kvand/Documents/Diabeties`):
 
 ```bash
-python3 analysis/train_age_dx_model.py \
-  --data analysis/TRAIN_train_standardized.xlsx \
+python3 train_age_dx_model.py \
+  --data TRAIN_train_standardized.xlsx \
   --phenotype "Diabetes Mellitus" \
-  --output-dir analysis/model_outputs \
+  --output-dir model_outputs \
   --n-splits 5
 ```
 
 Optional covariates:
 
 ```bash
-python3 analysis/train_age_dx_model.py \
-  --data analysis/TRAIN_train_standardized.xlsx \
+python3 train_age_dx_model.py \
+  --data TRAIN_train_standardized.xlsx \
   --phenotype "Optic Atrophy" \
   --include-sex \
   --include-diagnosis
@@ -46,7 +46,7 @@ python3 analysis/train_age_dx_model.py \
 
 For each phenotype, outputs are under:
 
-- `analysis/model_outputs/<phenotype_slug>/`
+- `model_outputs/<phenotype_slug>/`
 
 Key files:
 
@@ -64,10 +64,10 @@ Key files:
 Generate insight plots and out-of-fold diagnostics:
 
 ```bash
-MPLCONFIGDIR=/tmp/mpl XDG_CACHE_HOME=/tmp/.cache python3 analysis/visualize_age_dx_models.py \
-  --data analysis/TRAIN_train_standardized.xlsx \
+MPLCONFIGDIR=/tmp/mpl XDG_CACHE_HOME=/tmp/.cache python3 visualize_age_dx_models.py \
+  --data TRAIN_train_standardized.xlsx \
   --phenotype "Hearing Loss" \
-  --output-dir analysis/model_outputs \
+  --output-dir model_outputs \
   --n-splits 5
 ```
 
@@ -93,12 +93,12 @@ Example:
 ```python
 from pathlib import Path
 import pandas as pd
-from analysis.train_age_dx_model import predict_age_at_diagnosis
+from train_age_dx_model import predict_age_at_diagnosis
 
-rows = pd.read_excel("analysis/TRAIN_train_standardized.xlsx").head(3)
+rows = pd.read_excel("TRAIN_train_standardized.xlsx").head(3)
 pred = predict_age_at_diagnosis(
     standardized_rows=rows,
-    model_path=Path("analysis/model_outputs/diabetes_mellitus/gradient_boosting_pipeline.joblib"),
+    model_path=Path("model_outputs/diabetes_mellitus/gradient_boosting_pipeline.joblib"),
     include_sex=False,
     include_diagnosis=False,
 )

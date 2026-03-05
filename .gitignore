@@ -1,0 +1,43 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments and env files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Build / logs / cache
+build/
+dist/
+*.log
+.cache/
+
+# Generated outputs
+model_outputs/
+
+# Local registry/raw data and artifacts
+TRAIN_train_standardized.xlsx
+TRAIN Registry Patients Genetic Info (IU) Train Data.xlsx
+Registry Patients Genetic Information(IU).csv
+Onset by Severity Score_02.15.2025._V2.pdf
+data/
+assets/
+scraping/
+analysis/
+*_storyboard.html

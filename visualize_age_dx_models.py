@@ -37,7 +37,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--data",
         type=Path,
-        default=Path("analysis/TRAIN_train_standardized.xlsx"),
+        default=Path("TRAIN_train_standardized.xlsx"),
         help="Path to standardized TRAIN file (xlsx/csv).",
     )
     parser.add_argument(
@@ -49,7 +49,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("analysis/model_outputs"),
+        default=Path("model_outputs"),
         help="Base output directory used by training artifacts.",
     )
     parser.add_argument(

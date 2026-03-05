@@ -19,7 +19,7 @@ The current pipeline is designed to:
 
 Dataset used:
 
-- `analysis/TRAIN_train_standardized.xlsx`
+- `TRAIN_train_standardized.xlsx` (or provide any path via CLI args)
 - 277 rows (patients)
 
 Clinical interpretation assumptions (from collaborator guidance, enforced by preprocessing):
@@ -125,7 +125,7 @@ Using both gives a practical diagnostic:
 
 Each phenotype now has these figures under:
 
-- `analysis/model_outputs/<phenotype>/figures/`
+- `model_outputs/<phenotype>/figures/`
 
 ### `target_distribution.png`
 
@@ -386,20 +386,20 @@ This storyline is stronger because it separates:
 Train:
 
 ```bash
-python3 analysis/train_age_dx_model.py \
-  --data analysis/TRAIN_train_standardized.xlsx \
+python3 train_age_dx_model.py \
+  --data TRAIN_train_standardized.xlsx \
   --phenotype "Hearing Loss" \
-  --output-dir analysis/model_outputs \
+  --output-dir model_outputs \
   --n-splits 5
 ```
 
 Visualize:
 
 ```bash
-MPLCONFIGDIR=/tmp/mpl XDG_CACHE_HOME=/tmp/.cache python3 analysis/visualize_age_dx_models.py \
-  --data analysis/TRAIN_train_standardized.xlsx \
+MPLCONFIGDIR=/tmp/mpl XDG_CACHE_HOME=/tmp/.cache python3 visualize_age_dx_models.py \
+  --data TRAIN_train_standardized.xlsx \
   --phenotype "Hearing Loss" \
-  --output-dir analysis/model_outputs \
+  --output-dir model_outputs \
   --n-splits 5
 ```
 
