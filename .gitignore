@@ -1,0 +1,48 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments and env files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Build / logs
+build/
+dist/
+*.log
+
+# Local runtime cache
+.cache/
+
+# Analysis artifacts (generated)
+analysis/model_outputs/
+analysis/__pycache__/
+analysis/~$*.xlsx
+*_storyboard.html
+
+# Downloaded scraping snapshots
+scraping/*_files/
+scraping/*.html
+
+# Data artifacts and sensitive registry files
+data/
+Registry Patients Genetic Information(IU).csv
+analysis/TRAIN Registry Patients Genetic Info (IU) Train Data.xlsx
+analysis/TRAIN_train_standardized.xlsx
+Onset by Severity Score_02.15.2025._V2.pdf
