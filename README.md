@@ -125,7 +125,7 @@ Using both gives a practical diagnostic:
 
 Each phenotype now has these figures under:
 
-- `model_outputs/<phenotype>/figures/`
+- `figures/<phenotype>/`
 
 ### `target_distribution.png`
 
@@ -141,13 +141,13 @@ Why it matters:
 Current outputs:
 
 Diabetes Mellitus  
-![Diabetes Mellitus target distribution](model_outputs/diabetes_mellitus/figures/target_distribution.png)
+![Diabetes Mellitus target distribution](figures/diabetes_mellitus/target_distribution.png)
 
 Optic Atrophy  
-![Optic Atrophy target distribution](model_outputs/optic_atrophy/figures/target_distribution.png)
+![Optic Atrophy target distribution](figures/optic_atrophy/target_distribution.png)
 
 Hearing Loss  
-![Hearing Loss target distribution](model_outputs/hearing_loss/figures/target_distribution.png)
+![Hearing Loss target distribution](figures/hearing_loss/target_distribution.png)
 
 ### `cv_metrics.png`
 
@@ -164,13 +164,13 @@ Why it matters:
 Current outputs:
 
 Diabetes Mellitus  
-![Diabetes Mellitus CV metrics](model_outputs/diabetes_mellitus/figures/cv_metrics.png)
+![Diabetes Mellitus CV metrics](figures/diabetes_mellitus/cv_metrics.png)
 
 Optic Atrophy  
-![Optic Atrophy CV metrics](model_outputs/optic_atrophy/figures/cv_metrics.png)
+![Optic Atrophy CV metrics](figures/optic_atrophy/cv_metrics.png)
 
 Hearing Loss  
-![Hearing Loss CV metrics](model_outputs/hearing_loss/figures/cv_metrics.png)
+![Hearing Loss CV metrics](figures/hearing_loss/cv_metrics.png)
 
 ### `oof_observed_vs_predicted.png`
 
@@ -186,13 +186,13 @@ Why it matters:
 Current outputs:
 
 Diabetes Mellitus  
-![Diabetes Mellitus observed vs predicted](model_outputs/diabetes_mellitus/figures/oof_observed_vs_predicted.png)
+![Diabetes Mellitus observed vs predicted](figures/diabetes_mellitus/oof_observed_vs_predicted.png)
 
 Optic Atrophy  
-![Optic Atrophy observed vs predicted](model_outputs/optic_atrophy/figures/oof_observed_vs_predicted.png)
+![Optic Atrophy observed vs predicted](figures/optic_atrophy/oof_observed_vs_predicted.png)
 
 Hearing Loss  
-![Hearing Loss observed vs predicted](model_outputs/hearing_loss/figures/oof_observed_vs_predicted.png)
+![Hearing Loss observed vs predicted](figures/hearing_loss/oof_observed_vs_predicted.png)
 
 ### `residual_distribution.png`
 
@@ -208,13 +208,13 @@ Why it matters:
 Current outputs:
 
 Diabetes Mellitus  
-![Diabetes Mellitus residual distribution](model_outputs/diabetes_mellitus/figures/residual_distribution.png)
+![Diabetes Mellitus residual distribution](figures/diabetes_mellitus/residual_distribution.png)
 
 Optic Atrophy  
-![Optic Atrophy residual distribution](model_outputs/optic_atrophy/figures/residual_distribution.png)
+![Optic Atrophy residual distribution](figures/optic_atrophy/residual_distribution.png)
 
 Hearing Loss  
-![Hearing Loss residual distribution](model_outputs/hearing_loss/figures/residual_distribution.png)
+![Hearing Loss residual distribution](figures/hearing_loss/residual_distribution.png)
 
 ### `feature_importance_top.png`
 
@@ -230,13 +230,13 @@ Why it matters:
 Current outputs:
 
 Diabetes Mellitus  
-![Diabetes Mellitus feature importance](model_outputs/diabetes_mellitus/figures/feature_importance_top.png)
+![Diabetes Mellitus feature importance](figures/diabetes_mellitus/feature_importance_top.png)
 
 Optic Atrophy  
-![Optic Atrophy feature importance](model_outputs/optic_atrophy/figures/feature_importance_top.png)
+![Optic Atrophy feature importance](figures/optic_atrophy/feature_importance_top.png)
 
 Hearing Loss  
-![Hearing Loss feature importance](model_outputs/hearing_loss/figures/feature_importance_top.png)
+![Hearing Loss feature importance](figures/hearing_loss/feature_importance_top.png)
 
 ## 8) Current quantitative results and interpretation
 
