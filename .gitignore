@@ -30,6 +30,8 @@ dist/
 
 # Generated outputs
 model_outputs/
+figures/
+presentation/
 
 # Local registry/raw data and artifacts
 TRAIN_train_standardized.xlsx
@@ -41,3 +43,6 @@ assets/
 scraping/
 analysis/
 *_storyboard.html
+README_age_dx_model.md
+train_age_dx_model.py
+visualize_age_dx_models.py
