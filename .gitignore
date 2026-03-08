@@ -44,5 +44,3 @@ scraping/
 analysis/
 *_storyboard.html
 README_age_dx_model.md
-train_age_dx_model.py
-visualize_age_dx_models.py
